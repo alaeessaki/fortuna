@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "open-sans-regular";
+    src: url(../../../../assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "open-sans-bold";
+    src: url(../../../../assets/fonts/OpenSans-Bold.ttf);
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 26px;
+    font-family: open-sans-regular;
+    color: white;
+}
+
+h3 a label input button {
+    font-family: open-sans-regular;
+}
+
+.parag {
+    font-size: 20px;
+    font-family: open-sans-regular;
+    color: white;
+    font-weight: 100;
+}
+
+.main_form {
+    min-width: 280px;
+    max-width: 340px;
+    margin: auto;
+    padding: 0 10px;
+    position: relative;
+    z-index: 9;
+}
+
+.body_place {
+    padding: 8rem 1.5rem 35px;
+}
+
+.body_color {
+    background-color: #00A49D;
+}
+
+.form_body {
+    padding: 4rem 1.5rem 35px;
+}
+
+.form_title {
+    font-size: 2.0rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    padding-top: 0 !important;
+}
+
+.btn-register {
+    font-family: open-sans-regular;
+    font-weight: 100;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 2 3rem;
+    color: black;
+    background-color: #FFC000;
+}
+
+.btn-register:hover {
+    color: white;
+}
+
+.btn-connect {
+    font-family: open-sans-regular;
+    font-size: 13px;
+    text-align: center;
+    padding: 2 3rem;
+    color: white;
+    background-color: #00A49D;
+}
+
+.btn-connect:hover {
+    color: black;
+}
+
+.single-column{
+    height: 65vh !important;
+}

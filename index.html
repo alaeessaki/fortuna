@@ -2,24 +2,348 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="this is a website for courses">
-    <meta name="keywords" content="courses, html, css, js, free courses">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="this is a website for courses">
+  <meta name="keywords" content="courses, html, css, js, free courses">
 
-    <link rel="stylesheet" href="lib/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Fortuna</title>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/owl.carousel.min.css">
+  <link rel="stylesheet" href="lib/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Fortuna</title>
 </head>
 
 <body>
 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light py-2">
+      <a class="navbar-brand mr-0" href="#">
+        <img src="assets/imgs/logo.png" alt="Fortuna website logo" id="logo">
+      </a>
+      <div class="dropdown mr-auto">
+        <a class="nav-link dropdown-toggle d-flex flex-row justify-content-center align-items-center"
+          data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <img src="assets/imgs/list.png" alt="Fortuna categories icon" id="categories-icon">
+          Categories</a>
+        <div class="dropdown-menu" x-placement="bottom-start"
+          style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+          <a class="dropdown-item" href="#">Development</a>
+          <a class="dropdown-item" href="#">Physics</a>
+          <a class="dropdown-item" href="#">Chemistry</a>
+          <a class="dropdown-item" href="#">IT & Software</a>
+          <a class="dropdown-item" href="#">Design</a>
+          <a class="dropdown-item" href="#">Robotics</a>
+          <a class="dropdown-item" href="#">Marketing</a>
+          <a class="dropdown-item" href="#">Business</a>
+        </div>
+      </div>
 
-    <script src="lib/jquery-3.3.1.slim.min.js"></script>
-    <script src="lib/popper.min.js"></script>
-    <script src="lib/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <form class="form-inline my-2 my-lg-0 mx-lg-auto mr-auto" id="search-form">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" id="search-input">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown ml-2 ml-lg-0">
+            <a class="nav-link dropdown-toggle text-primary" data-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false">English</a>
+            <div class="dropdown-menu" x-placement="bottom-start"
+              style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+              <a class="dropdown-item active" href="#">English</a>
+              <a class="dropdown-item" href="#">French</a>
+            </div>
+          </li>
+          <li class="nav-item active ml-2 ml-lg-0 mr-2 text-center">
+            <a class="nav-link" href="pages/login/login.html" id="login">Login</a>
+          </li>
+          <li class="nav-item active  ml-2 ml-lg-0 text-center">
+            <a class="nav-link" href="pages/signup/signup.html" id="sign-up">Sign-up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="jumbotron hero text-center position-relative">
+      <div class="position-absolute hero-image"></div>
+      <blockquote class="blockquote text-center mt-5">
+        <p class="mb-0">“Anyone who stops learning is old,<br> whether at twenty or eighty.” </p><br>
+        <footer class="blockquote-footer mt-1"><cite title="Source Title">Henry Ford</cite></footer>
+      </blockquote>
+      <a class="btn text-primary enroll mt-3" href="#" role="button">Get started</a>
+    </div>
+  </section>
+
+  <section class="mt-3">
+    <div class="container-fluid statistics">
+      <div class="row">
+        <div class="col-6 col-md-3 text-center statistics-item text-primary">
+          <img src="assets/imgs/book.png" alt="Fortuna book icon">
+          <p class="pt-3">+5000 courses</p>
+        </div>
+        <div class="col-6 col-md-3 text-center statistics-item text-primary">
+          <img src="assets/imgs/class.png" alt="Fortuna class icon">
+          <p class="pt-3">+30 experts</p>
+        </div>
+        <div class="col-6 col-md-3 text-center statistics-item text-primary">
+          <img src="assets/imgs/clock-circular-outline.png" alt="Fortuna clock icon">
+          <p class="pt-3">+3000 houres</p>
+        </div>
+        <div class="col-6 col-md-3 text-center statistics-item text-primary">
+          <img src="assets/imgs/graduate-student-avatar.png" alt="Fortuna student icon">
+          <p class="pt-3">+20 000 students</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5">
+
+      <div class="title text-left mb-5 pt-5 pb-3">
+        <h2>Top courses</h2>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="card text-primary mb-3 text-center">
+            <div class="circle mt-4"></div>
+            <div class="card-body">
+              <h4 class="card-title">Nom</h4>
+              <h6 class="card-title">instructor</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint excepturi
+                temporibus rem, voluptate provident corporis voluptatem, asperiores aliquid cupiditate quos ipsam earum,
+                similique porro nemo sapiente sed deleniti illum.</p>
+              <p class="text-right price">20$</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card text-primary mb-3 text-center">
+            <div class="circle mt-4"></div>
+            <div class="card-body">
+              <h4 class="card-title">Nom</h4>
+              <h6 class="card-title">instructor</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint excepturi
+                temporibus rem, voluptate provident corporis voluptatem, asperiores aliquid cupiditate quos ipsam earum,
+                similique porro nemo sapiente sed deleniti illum.</p>
+              <p class="text-right price">20$</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card text-primary mb-3 text-center">
+            <div class="circle mt-4"></div>
+            <div class="card-body">
+              <h4 class="card-title">Nom</h4>
+              <h6 class="card-title">instructor</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint excepturi
+                temporibus rem, voluptate provident corporis voluptatem, asperiores aliquid cupiditate quos ipsam earum,
+                similique porro nemo sapiente sed deleniti illum.</p>
+              <p class="text-right price">20$</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card text-primary mb-3 text-center">
+            <div class="circle mt-4"></div>
+            <div class="card-body">
+              <h4 class="card-title">Nom</h4>
+              <h6 class="card-title">instructor</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint excepturi
+                temporibus rem, voluptate provident corporis voluptatem, asperiores aliquid cupiditate quos ipsam earum,
+                similique porro nemo sapiente sed deleniti illum.</p>
+              <p class="text-right price">20$</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card text-primary mb-3 text-center">
+            <div class="circle mt-4"></div>
+            <div class="card-body">
+              <h4 class="card-title">Nom</h4>
+              <h6 class="card-title">instructor</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint excepturi
+                temporibus rem, voluptate provident corporis voluptatem, asperiores aliquid cupiditate quos ipsam earum,
+                similique porro nemo sapiente sed deleniti illum.</p>
+              <p class="text-right price">20$</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card text-primary mb-3 text-center">
+            <div class="circle mt-4"></div>
+            <div class="card-body">
+              <h4 class="card-title">Nom</h4>
+              <h6 class="card-title">instructor</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint excepturi
+                temporibus rem, voluptate provident corporis voluptatem, asperiores aliquid cupiditate quos ipsam earum,
+                similique porro nemo sapiente sed deleniti illum.</p>
+              <p class="text-right price">20$</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="jumbotron jumbotron-enroll jumbotron-fluid mt-5">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="display-5 text-light">What Are you waiting for ?</h1>
+          <p class="lead text-light">Enroll into your first course</p>
+          <a class="btn btn-md enroll text-primary" href="#" role="button">Enroll now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="title text-left mb-5 pt-5 pb-3">
+      <h2>Top categories</h2>
+    </div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button type="button" class="btn btn-outline-secondary w-100">Developpoment</button>
+
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button type="button" class="btn btn-outline-secondary w-100">Phisic</button>
+
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button type="button" class="btn btn-outline-secondary w-100">Cimestry</button>
+
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button type="button" class="btn btn-outline-secondary w-100">Maketing</button>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button type="button" class="btn btn-outline-secondary w-100">Design</button>
+
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button type="button" class="btn btn-outline-secondary w-100">Math</button>
+
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button type="button" class="btn btn-outline-secondary w-100">English</button>
+
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button type="button" class="btn btn-outline-secondary w-100">Accounting</button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <section>
+    <div class="container-fluid mt-5">
+      <div class="row text-center" style="border: 1px solid black;">
+        <div class="col p-0">
+          <div id="sback">
+            <h2>Teach</h2>
+            <p><strong>Teach what you love today with our Fortuna</strong></p>
+            <a class="btn btn-md gets" href="#" role="button">Get Started</a>
+          </div>
+        </div>
+        <div class="col p-0">
+          <div id="lback">
+            <h2 style="color: white">Learn</h2>
+            <p><strong>Get unlimited access to our Course +500</strong></p>
+            <a class="btn btn-md enro" href="#" role="button">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container text-center">
+    <div class="title text-center title-spec mb-5 pt-5 pb-3">
+      <h2>Top categories</h2>
+    </div>
+  </div>
+
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6" id="lback">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Email :</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Email" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Object :</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Object" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+
+
+        </div>
+        <div class="col-12 col-md-6 align-items-center my-auto" id="sback">
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Message ...</textarea>
+          </div>
+          <a class="btn btn-sm enro float-right" href="#" role="button">Send</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-12 col-md-4 my-auto">
+          <img src="assets/imgs/logo.png" alt="fortuna logo" id="footer-logo">
+        </div>
+        <div class="col-12 col-md-4 mt-auto">
+          <p>Copyright © 2019 Fortuna.</p>
+        </div>
+        <div class="col-12 col-md-4 my-auto">
+          <div class="btn-group dropup">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              English
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item active" href="#">English</a>
+              <a class="dropdown-item" href="#">French</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lib/jquery-3.3.1.slim.min.js"></script>
+  <script src="lib/popper.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="lib/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>

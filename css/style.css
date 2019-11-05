@@ -2,21 +2,239 @@
     font-family: "open-sans-regular";
     src: url(../assets/fonts/OpenSans-Regular.ttf);
 }
+
 @font-face {
     font-family: "open-sans-bold";
     src: url(../assets/fonts/OpenSans-Bold.ttf);
 }
-@font-face {
-    font-family: "open-sans-light";
-    src: url(../assets/fonts/OpenSans-Light.ttf);
-}
-@font-face {
-    font-family: "open-sans-semibold";
-    src: url(../assets/fonts/OpenSans-SemiBold.ttf);
-}
-
-
-
 
 /* Main css */
+
+#categories-icon {
+    width: 16px;
+    margin-right: 5px;
+}
+
+#logo {
+    width: 100px;
+}
+
+#search-form {
+    width: 52%;
+}
+
+#search-input {
+    width: 70%;
+}
+
+a {
+    font-size: 12px;
+}
+
+#login {
+    background-color: #00A49D;
+    color: white;
+    width: 100px;
+}
+
+#sign-up {
+    background-color: #FFC000;
+    width: 100px;
+}
+
+.enroll {
+    background-color: #FFC000;
+}
+
+.hero {
+    background: transparent;
+    height: 65vh;
+    color: white;
+}
+
+.blockquote p {
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.blockquote-footer {
+    color: white;
+    font-size: 18px;
+    padding-left: 30%;
+}
+
+.hero-image {
+    width: 100vw;
+    height: 65vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url("../assets/imgs/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(40%);
+}
+
+section {
+    overflow-x: hidden;
+}
+
+.statistics-item img {
+    width: 38px;
+}
+
+.statistics-item p {
+    font-size: 18px;
+    font-family: "open-sans-bold";
+    font-weight: 400;
+}
+
+.owl-next, .owl-prev {
+    font-size: 60px !important;
+    color: black !important;
+    top: 8rem;
+}
+
+.owl-next {
+    position: absolute;
+    right: -3rem;
+    
+}
+.owl-prev{
+    position: absolute;
+    left: -3rem;
+}
+.card{
+    background-color: #00A49D;
+    min-height: 20rem;
+    cursor: pointer;
+}
+.card .circle{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+    border: 1px solid;
+}
+.card-title{
+    font-family: "open-sans-regular";
+    letter-spacing: 2px;
+}
+
+.title h2{
+    text-transform: initial;
+    font-size: 22px;
+    letter-spacing: initial;
+    position: relative;
+}
+.title h2::before{
+    content: "";
+    width: 15%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: -5%;
+    bottom: -8px;
+}
+.title-spec h2::before{
+    left: 40%;
+}
+.price{
+    padding-top: 10px;
+    font-family: "open-sans-bold";
+}
+
+#footer-logo{
+    width: 150px;
+}
+footer{
+    margin-top: 3rem;
+}
+
+.jumbotron-enroll{
+    background-color: #00A49D;
+}
+.btn-outline-secondary:hover{
+    background-color: #FFC000 !important;
+    color: black !important;
+}
+
+
+
+/* contact us style */
+
+#lback{
+    background-color: #00a49d;
+    color: white;
+    padding: 6%;
+    height: auto;
+    /*border: 2px solid black;*/
+    /*border-radius: 1em 1em 1em / 1em 1em;*/
+}
+#sback{
+    margin-top: 2.3rem;
+}
+
+.gets{
+    color: white;
+    background-color: #00a49d;
+}
+.enro{
+    color: black;
+    background-color: #FFC000;
+}
+.enro-2{
+    background-color: white;
+}
+.wrap-input100{
+    padding: 3%;
+}
+
+
+ /*sign up*/
+.backgcol{
+    background-color: #00a49d;
+}
+
+label, input {
+    width: 70%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+label {
+    text-align: right;
+    color: black;
+    width: 30%;
+    height: 10%;
+    padding-right: 10%;
+}
+input {
+    border: 1px solid #00a49d;
+    border-radius: 5px;
+}
+
+
+.my-form
+{
+    padding-top: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.input-group{
+    padding-top: 2%;
+}
+.offset-md-4{
+    padding-top: 2%;
+}
+
 

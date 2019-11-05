@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="this is a website for courses">
+    <meta name="keywords" content="courses, html, css, js, free courses">
+
+    <link rel="stylesheet" href="../../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Fortuna</title>
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <a class="navbar-brand mr-0" href="../../index.html">
+                <img src="../../assets/imgs/logo.png" alt="Fortuna website logo" id="logo">
+            </a>
+            <div class="dropdown mr-auto">
+                <a class="nav-link dropdown-toggle d-flex flex-row justify-content-center align-items-center"
+                    data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img src="../../assets/imgs/list.png" alt="fortuna categories icon" id="categories-icon">
+                    Categories</a>
+                <div class="dropdown-menu" x-placement="bottom-start"
+                    style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                    <a class="dropdown-item" href="#">Development</a>
+                    <a class="dropdown-item" href="#">Physics</a>
+                    <a class="dropdown-item" href="#">Chemistry</a>
+                    <a class="dropdown-item" href="#">IT & Software</a>
+                    <a class="dropdown-item" href="#">Design</a>
+                    <a class="dropdown-item" href="#">Robotics</a>
+                    <a class="dropdown-item" href="#">Marketing</a>
+                    <a class="dropdown-item" href="#">Business</a>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <form class="form-inline my-2 my-lg-0 mx-lg-auto mr-auto" id="search-form">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" id="search-input">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown ml-2 ml-lg-0">
+                        <a class="nav-link dropdown-toggle text-primary" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">English</a>
+                        <div class="dropdown-menu" x-placement="bottom-start"
+                            style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                            <a class="dropdown-item active" href="#">English</a>
+                            <a class="dropdown-item" href="#">French</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active ml-2 ml-lg-0 mr-2 text-center">
+                        <a class="nav-link" href="../login/login.html" id="login">Login</a>
+                    </li>
+                    <li class="nav-item active  ml-2 ml-lg-0 text-center">
+                        <a class="nav-link" href="#" id="sign-up">Sign-up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="my-form">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card" style="background-color: #00a49d">
+                        <div class="card-header text-center p-4" style="color: black; font-size: xx-large">
+                            <h1><strong>Sign-Up</strong></h1>
+                        </div>
+                        <div class="card-body">
+                            <form name="my-form" onsubmit="return validform()" action="success.php" method="">
+                                <div class="form-group row">
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Full
+                                        Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="full_name" class="form-control" placeholder="Full Name"
+                                            name="full-name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail
+                                        Address</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="email_address" class="form-control"
+                                            placeholder="E-Mail Address" name="email-address">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="user_name"
+                                        class="col-md-4 col-form-label text-md-right">Username</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="user_name" class="form-control" placeholder="Username"
+                                            name="username">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="password" class="form-control" placeholder="Password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="rpassword" class="col-md-4 col-form-label text-md-right">Confirm
+                                        Password</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="rpassword" class="form-control"
+                                            placeholder="Confirm Password">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group text-center">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="customRadio"
+                                            class="custom-control-input" checked="">
+                                        <label class="custom-control-label p-0 my-3 text-left pl-2" for="customRadio1">Student</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label p-0 my-3 text-left pl-2" for="customRadio2">Instructor</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group text-center">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1"
+                                            checked="">
+                                        <label class="custom-control-label text-left pl-2 p-0" for="customCheck1">I agree
+                                            with terms</label>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="text-center">
+                                    <button type="reset" class="btn btn-group-sm enro enro-2">Reset</button>
+                                    <button type="submit" class="btn btn-group-sm enro">
+                                        Sign Up
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-12 col-md-4 my-auto">
+                    <img src="../../assets/imgs/logo.png" alt="fortuna logo" id="footer-logo">
+                </div>
+                <div class="col-12 col-md-4 mt-auto">
+                    <p>Copyright © 2019 Fortuna.</p>
+                </div>
+                <div class="col-12 col-md-4 my-auto">
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            English
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item active" href="#">English</a>
+                            <a class="dropdown-item" href="#">French</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../../lib/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../lib/popper.min.js"></script>
+    <script src="../../lib/bootstrap.min.js"></script>
+</body>
+
+</html>
